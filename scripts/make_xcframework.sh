@@ -56,11 +56,11 @@ download_patched_version_of_bazel() {
 }
 
 build_xcframework() {
-#    cd "${BAZEL_DIR}"
-#    cd "3.7.2"
-#    mkdir -p "$(dirname ${PATCHED_BAZEL_BIN})"
-#    cp bazel-bin/src/bazel "${PATCHED_BAZEL_BIN}"
-#    chmod +x "${PATCHED_BAZEL_BIN}"
+    cd "${BAZEL_DIR}"
+    cd "3.7.2"
+    mkdir -p "$(dirname ${PATCHED_BAZEL_BIN})"
+    cp bazel-bin/src/bazel "${PATCHED_BAZEL_BIN}"
+    chmod +x "${PATCHED_BAZEL_BIN}"
 
     readonly SIM_ARM64_DIR="${BUILD_DIR}/iphonesimulator/ios_sim_arm64"
     readonly SIM_x86_DIR="${BUILD_DIR}/iphonesimulator/ios_x86_64"
